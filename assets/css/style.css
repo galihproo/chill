@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p--15 {
+    padding: 15px !important;
+}
+
+.navbar {
+    padding: 24px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar .navbar-brand {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    font-weight: 700;
+}
+
+.navbar .navbar-brand img {
+    margin-right: 60px;
+}
+
+/* Login Page */
+
+.login-page {
+    position: relative;
+}
+
+.login-page .content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-page .content h2 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.login-page .content p {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.login-page .content p span {
+    color: #F36F21;
+}
+
+.login-page .content .btn-login {
+    border: 1px solid #E3E7EB;
+    border-radius: 8px;
+    color: #000;
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.login-page .content .btn-login img {
+    margin-right: 20px;
+}
+
+/* Dashboard Page */
+
+.dashboard-page .navbar .btn-logout {
+    border: 1px solid #1EBAED;
+    border-radius: 4px;
+    color: #1EBAED;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 12px 21px;
+    transition: all .3s ease-in-out;
+}
+
+.dashboard-page .navbar .btn-logout:hover {
+    background-color: #1EBAED;
+    color: #fff;
+}
+
+.dashboard-page .content {
+    padding-top: 136px;
+}
+
+.dashboard-page .content .card-columns {
+    column-count: 1;
+}
+
+.dashboard-page .content .card-columns .card {
+    margin-bottom: 30px;
+    border: none;
+}
+
+.dashboard-page .content .card-columns .card .card-title {
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.dashboard-page .content .card-columns .card .card-body {
+    border: 1px solid #CBCED2;
+    border-radius: 8px;
+}
+
+.dashboard-page .content .card-columns .card p,
+.dashboard-page .content .card-columns .card .p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    margin: auto 0 0 0;
+    text-decoration: none;
+}
+
+.dashboard-page .content .card-columns .card .col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    min-height: 100px;
+}
+
+.dashboard-page .content .card-columns .card .col-4 .icon {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-page .content .card-columns .card .col-4 .icon-80 {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-page .content .card-columns .card .col-4 img.icon {
+    cursor: pointer;
+}
+
+/* Modal */
+
+.modal .modal-title {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.modal .close {
+    color: #1EBAED;
+    font-size: 36px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.modal .modal-dialog {
+    max-width: 100%;
+}
+
+.modal .modal-content,
+.modal .modal-header {
+    border: none;
+}
+
+.modal .modal-header {
+    padding: 28px 24px;
+}
+
+.modal .col-4,
+.modal .col-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.modal .col-4 img,
+.modal .col-6 img {
+    max-width: 84px;
+}
+
+.modal .col-4 p,
+.modal .col-6 p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+    margin: 16px 0 0 0;
+}
+
+.bg-content.modalBlur > *:not(.modal) {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+@media (min-width: 576px) {
+    .login-page .content h2 {
+        font-size: 24px;
+        line-height: 36px;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .login-page .content p {
+        font-size: 21px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 50px;
+    }
+    .login-page .content .btn-login {
+        border: 1px solid #E3E7EB;
+        border-radius: 8px;
+        color: #000;
+        padding: 15px 30px 15px 20px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    .login-page .content .btn-login img {
+        margin-right: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .dashboard-page .content .card-columns {
+        column-count: 2;
+    }
+    .dashboard-page .content .card-columns .card .col-4 {
+        min-height: 110px;
+    }
+    .modal .modal-dialog {
+        max-width: 380px;
+    }
+}
+
+@media (min-width: 768px) {
+    .dashboard-page .content .card-columns {
+        column-count: 3;
+    }
+    .dashboard-page .content .card-columns .card .col-4 {
+        min-height: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+ 
+@media (max-width: 575px) {
+    .navbar {
+        padding: 24px 20px;
+    }
+    .navbar .navbar-brand img {
+        margin-right: 0;
+    }
+}
