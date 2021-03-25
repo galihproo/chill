@@ -1,9 +1,9 @@
-// let sourceSwap = function () {
-//     let $this = $(this);
-//     let newSource = $this.data('alt-src');
-//     $this.data('alt-src', $this.attr('src'));
-//     $this.attr('src', newSource);
-// }
+let sourceSwap = function () {
+    let $this = $(this);
+    let newSource = $this.data('alt-src');
+    $this.data('alt-src', $this.attr('src'));
+    $this.attr('src', newSource);
+}
 
 // $(document).ready(function() {
 //     $('.btn-modal').on('click', function() {
@@ -32,8 +32,8 @@
 // });
 
 $(document).ready(function() {
-    // $('img.icon').hover(sourceSwap, sourceSwap);
-    $("img.icon").hover(function(){
+    $('img.icon').hover(sourceSwap, sourceSwap);
+    /* $("img.icon").hover(function(){
         $(this).attr("src", function(index, attr){
             return attr.replace(".svg", "-hover.svg");
         });
@@ -41,7 +41,7 @@ $(document).ready(function() {
         $(this).attr("src", function(index, attr){
             return attr.replace("-hover.svg", ".svg");
         });
-    });
+    }); */
 });
 
 (function(){
